@@ -30,4 +30,12 @@ const calculateValue = () => {
     console.log('new value' + ' ' + url)
 }
 
-calculateValue();
+const calculateValue = (a, b) => console.log(a + b);
+
+function calculateValue1(a, b) {
+    return a+b;
+}
+
+calculateValue(2, 4);
+calculateValue(10, 15);
+calculateValue1(6, 9);
