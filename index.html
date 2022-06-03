@@ -6,11 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--responsive-->
         <title>Javascript</title>
         <meta name="description" content="this page is not about javascript">  <!--google search description-->
+        <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
-        <script type="module" src="./js/app.js" async></script> <!--javascript-->
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+        <script type="module" src="./js/app.js" async></script> <!--activates javascript-->
+        
     </head>
-    <body>
-        <h1>Playground</h1>
+    <body style="overflow:hidden">
+        <main id="map">
+        </main>
+        <div class="bike-overlay hidden">
+            <div class="close-overlay"></div>
+            <div class="smallergap">
+                 <h2 class="StationTitle">Station</h2>
+                 <h2 class="StationAddress">Adresseveien 10</h2> 
+            </div>
+            <img src="assets/icons/BysykkelLogo.svg" alt="Ikon for Oslo Bysykkel" class="big-bike">
+            <b class="availability">0 ledige sykler</b>
+       </div>
     </body>
 
 </html>
